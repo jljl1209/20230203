@@ -1,0 +1,90 @@
+/* 放入8張背景圖 */
+
+#galleryImage1 {
+    background-image: url(../img/galleryImage1.jpg);
+}
+
+#galleryImage2 {
+    background-image: url(../img/galleryImage2.jpg);
+}
+
+#galleryImage3 {
+    background-image: url(../img/galleryImage3.jpg);
+}
+
+#galleryImage4 {
+    background-image: url(../img/galleryImage4.jpg);
+}
+
+#galleryImage5 {
+    background-image: url(../img/galleryImage5.jpg);
+}
+
+#galleryImage6 {
+    background-image: url(../img/galleryImage6.jpg);
+}
+
+#galleryImage7 {
+    background-image: url(../img/galleryImage7.jpg);
+}
+
+#galleryImage8 {
+    background-image: url(../img/galleryImage8.jpg);
+}
+
+/* Hover grayscale (100%) -> color(100%) */
+
+[id^='galleryImage'] {
+    height: 250px;
+    background-size: cover;
+    filter: grayscale(90%);
+}
+
+[id^='galleryImage']>.galleryText {
+    line-height: 250px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+/* Hover images grayscale (90)>0 */
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+/*  galleryText font size 10>50 */
+
+[id^='galleryImage']:hover>.galleryText {
+    font-size: 50px;
+    opacity: 50;
+}
+
+/* transition */
+
+[id^='galleryImage'],
+.galleryText {
+    transition: all .5s ease-in-out;
+}
+
+/* --------footer---------- */
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer-end p {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.copyright {
+    background-color: rgb(67, 67, 67);
+}
